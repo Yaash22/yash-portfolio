@@ -1,0 +1,21 @@
+{
+  "class_distribution": [
+    {"class": "Urban", "count": 12500, "percentage": 25.0},
+    {"class": "Forest", "count": 15000, "percentage": 30.0},
+    {"class": "Water", "count": 8000, "percentage": 16.0},
+    {"class": "Agriculture", "count": 10000, "percentage": 20.0},
+    {"class": "Barren", "count": 4500, "percentage": 9.0}
+  ],
+  "confusion_matrix": [
+    [0.95, 0.02, 0.01, 0.01, 0.01],
+    [0.01, 0.97, 0.01, 0.00, 0.01],
+    [0.00, 0.01, 0.98, 0.00, 0.01],
+    [0.02, 0.01, 0.00, 0.96, 0.01],
+    [0.01, 0.01, 0.01, 0.01, 0.96]
+  ],
+  "training_history": {
+    "epochs": 50,
+    "final_loss": 0.123,
+    "validation_accuracy": 0.923
+  }
+}

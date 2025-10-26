@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0066ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00aaff;
+}
+
+/* Mission Control specific styles */
+.mission-control-bg {
+  background: radial-gradient(ellipse at center, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.orbit-path {
+  stroke: #0066ff;
+  stroke-width: 1;
+  fill: none;
+  stroke-dasharray: 5, 5;
+  animation: orbit-dash 20s linear infinite;
+}
+
+@keyframes orbit-dash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+.neon-glow {
+  box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+}
+
+.signal-bar {
+  background: linear-gradient(90deg, #00ff88 0%, #0066ff 100%);
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.signal-bar:hover {
+  height: 8px;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles */
+.focus-ring:focus {
+  outline: 2px solid #00ff88;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

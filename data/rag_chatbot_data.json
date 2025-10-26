@@ -1,0 +1,20 @@
+{
+  "accuracy_over_time": [
+    {"month": "Jan", "accuracy": 85.2},
+    {"month": "Feb", "accuracy": 87.1},
+    {"month": "Mar", "accuracy": 89.3},
+    {"month": "Apr", "accuracy": 91.7},
+    {"month": "May", "accuracy": 93.2},
+    {"month": "Jun", "accuracy": 94.0}
+  ],
+  "response_times": [
+    {"query_type": "Technical", "avg_time": 1.1},
+    {"query_type": "General", "avg_time": 0.9},
+    {"query_type": "Complex", "avg_time": 1.8}
+  ],
+  "usage_stats": {
+    "total_queries": 15420,
+    "successful_queries": 14495,
+    "failed_queries": 925
+  }
+}
