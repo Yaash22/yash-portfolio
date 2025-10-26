@@ -134,11 +134,12 @@ const MiniChart: React.FC<MiniChartProps> = ({ data, type, title, className = ''
       className={`w-full h-32 ${className}`}
     >
       <Plot
-        data={plotConfig.data}
-        layout={plotConfig.layout}
-        config={plotConfig.config}
-        style={{ width: '100%', height: '100%' }}
-      />
+  data={plotConfig.data as any}
+  layout={plotConfig.layout}
+  config={plotConfig.config}
+  style={{ width: '100%', height: '100%' }}
+/>
+
     </motion.div>
   );
 };
