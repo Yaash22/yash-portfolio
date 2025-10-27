@@ -6,7 +6,7 @@ A production-ready, space-themed interactive portfolio showcasing data science a
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Yaash22/yash-portfolio
 cd mission-control-portfolio
 
 # Install dependencies
